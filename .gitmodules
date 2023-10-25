@@ -1,0 +1,3 @@
+[submodule "PLEARN"]
+	path = PLEARN
+	url = https://github.com/CryptoStein-PLEARN/PLEARN
