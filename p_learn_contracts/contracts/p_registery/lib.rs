@@ -1,4 +1,5 @@
 #![cfg_attr(not(feature = "std"), no_std, no_main)]
+ 
 #[openbrush::implementation(AccessControl)]
 
 #[openbrush::contract]
@@ -8,28 +9,44 @@ mod p_registry {
         traits::Storage,
     };
     use ink::storage::Mapping;
-    // use ink::ink_primitives::AccountId;
-    /// Defines the storage of your contract.
-    /// Add new fields to the below struct in order
-    /// to add new static storage fields to your contract.
+    use p_learn_levels::p_learn_levels::LevelsRef;
+ 
     #[ink(storage)]
-    #[derive(Default, Storage)]
+    #[derive( Storage)]
     pub struct Contract {
+         #[storage_field]
+          levels:LevelsRef,
         /// Stores a `mapping` for last level per player on the storage.
          player_last_level: Mapping<AccountId, u32>,
          #[storage_field]
         access: access_control::Data,
     }
+    
 
     impl Contract {
         /// Constructor that initializes the `bool` value to the given `init_value`.
         #[ink(constructor)]
-        pub fn new() -> Self {
-             let mut instance = Self::default();
+      pub fn new(owner : AccountId,other_contract_code_hash: Hash) -> Self {
+        let nft = LevelsRef::new(owner)
+        .code_hash(other_contract_code_hash)
+        .endowment(0)
+        .salt_bytes([0xDE, 0xAD, 0xBE, 0xEF])
+        .instantiate();           
+            //  let mut instance = Self::default();
 
+            // let caller = instance.env().caller();
+            // access_control::Internal::_init_with_admin(&mut instance, Some(caller));
+            // instance.levels = nft;
+            //   instance
+             let mut instance=Self {
+                levels: nft,
+                player_last_level: Mapping::new(),
+                access: access_control::Data::default(),
+            };
             let caller = instance.env().caller();
-            access_control::Internal::_init_with_admin(&mut instance, Some(caller));
-              instance
+          access_control::Internal::_init_with_admin(&mut instance, Some(caller));
+          instance
+
         }
 
       
