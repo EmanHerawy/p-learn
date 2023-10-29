@@ -5,7 +5,9 @@
 
 <br />
 
-
+## Demos 
+- metaverese demo <video src="https://www.loom.com/share/244e002e8c5641f88377982e65d079ee?sid=b7e999ac-943f-4b49-a12f-a3093112f215" controls title="Title"></video>
+- <video src="inkdemo.mp4" controls title="Title"></video>
 ## About the Project
 
 Financial literacy among young individuals is a pressing concern, with one in five teens lacking a basic foundation for financial literacy. PLEARN, our blockchain-based virtual board game, addresses this gap by delivering financial education in an engaging manner. Our aim is to equip the youth with essential financial skills, reduce costs related to financial management, enhance financial safety nets, and ensure financial security. There's a growing divide between the financial responsibilities placed on young individuals and their ability to make informed financial decisions. PLEARN acts as a bridge to close this gap and empower the youth to make wise financial choices. Through PLEARN, players gain hands-on experience in managing finances by investing, trading, and real estate transactions.
