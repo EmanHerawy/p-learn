@@ -36,19 +36,9 @@
   * [Tech Stack](#space_invader-tech-stack)
   * [Color Reference](#art-color-reference)
   * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-  * [Smart Contract](#exploding_head-Smart-Contracts)
-- [Roadmap](#compass-roadmap)
-- [Team](#wave-Team)
-- [Contact](#handshake-contact)
-- [Useful Links](#link-Useful-Links)
+  * [Useful Links](#link-Useful-Links)
   * [PLEARN Litepaper](#scroll-ESGROW-Whitepaper)
   * [Demo](#cinema-Demo)
-- [Acknowledgments](#gem-Acknowledgements)
 
   
 
@@ -124,6 +114,7 @@ Land is owned by a landowner if it has been bought. The landowner may choose to 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
   [(https://incredible-liger-fb1306.netlify.app/)](https://plearngame.netlify.app/)
+  
 
 <img width="997" alt="Screenshot 2023-10-29 at 23 17 34" src="https://github.com/EmanHerawy/p-learn/assets/88503953/e537fcf2-eca3-4530-8bed-602eceaa3832">
 <img width="735" alt="Screenshot 2023-10-29 at 22 53 09" src="https://github.com/CryptoStein-PLEARN/PLEARN/assets/107268440/dac5f6f1-7ea8-4277-b89b-fbcb720ac362">
@@ -132,83 +123,6 @@ Land is owned by a landowner if it has been bought. The landowner may choose to 
 <img width="954" alt="Screenshot 2023-10-29 at 23 14 29" src="https://github.com/EmanHerawy/p-learn/assets/88503953/8a74825f-cc5f-40be-9bc3-856b005b3d64">
 <img width="954" alt="Screenshot 2023-10-29 at 23 14 57" src="https://github.com/EmanHerawy/p-learn/assets/88503953/beecaa9c-be4b-45b7-9e1d-319e8073ddea">
 
-
-
-
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
- 
-
-
-</div>
-
-
-<!-- TechStack -->
-### :space_invader: Tech Stack
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-    
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-  <li><a href="https://aws.amazon.com/">Amazon DynamoDB</a></li>
-  </ul>
-</details>
-
-
-<details>
-<summary>Backend</summary>
-  <ul> 
-    <li><a href="https://aws.amazon.com/it/elasticbeanstalk/">Amazon Cloud Elastic-beanstalk</a></li>
-    <li><a href="https://www.nodejs.org/">Nodejs</a></li>
-  </ul>
-</details>
-
-
-<details>
-<summary>Web3</summary>
-  <li><a href="https://hardhat.org/">Hardhat</a></li>
-  <li><a href="https://chain.link/keepers/">Chainlink</a></li>
-  <li><a href="https://docs.ethers.io/v5/">Etherjs</a></li>
-  <ul> 
-</details>
-  
-  <details>
-<summary>AWS Tools</summary>
-    
-  - Amazon Elastic Compute Cloud (EC2)
-    
-  - AWS Identity and Access Management (IAM)
-    
-  - AWS Elastic Beanstalk
-    
-  - Legal Entity Identifier (LEI)
-    
-  - Legal Entity Reference Data (LE-RD)
-    <ul> 
-</details>
-    
-  <details>
-<summary>Challenges and Solutions</summary>
-  1- Airdrops:
-    
-      - Solution: We have used chainlink to automate the "airdrop" function of the smart contracts
-    
-  2- AWS:
-    
-     - The varities AWS provide in terms of tools, databases and products,creates a difficulty in choosing the right tool for the project.
-       Solution: We start with databases relating to the environment topics, which can narrow down the confusion and timing.
-  <ul> 
-</details>
 
   ---
 
@@ -450,13 +364,6 @@ Install dependencies with npm
   - ## :cinema: Demo
   https://www.loom.com/share/244e002e8c5641f88377982e65d079ee?sid=d2cc4f25-5524-4174-9971-def84109f100
   
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
 
- - [Readme Template](https://github.com/Louis3797/awesome-readme-template/)
- - [Polygon](https://polygon.technology/)
- - [Filecoin](https://filecoin.io)
- - [Hardhat](https://hardhat.org/)
- - [Ekolance](https://www.ekolance.io/)
  
 
