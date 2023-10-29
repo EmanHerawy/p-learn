@@ -1,5 +1,8 @@
 #![cfg_attr(not(feature = "std"), no_std, no_main)]
-
+pub use self::p_learn_levels::{
+    Levels,
+    LevelsRef,
+};
         
 #[openbrush::implementation(PSP37, PSP37Batch, PSP37Burnable, PSP37Mintable, PSP37Enumerable,AccessControl)]
 #[openbrush::contract]
@@ -28,16 +31,17 @@ pub mod p_learn_levels {
     fn mint() {}
     impl Levels {
        #[ink(constructor)]
-              pub fn new(minter: AccountId) -> Self {
+              pub fn new(owner: AccountId) -> Self {
             let mut instance = Self::default();
 
             let caller = instance.env().caller();
-            access_control::Internal::_init_with_admin(&mut instance, Some(caller));
+            access_control::Internal::_init_with_admin(&mut instance, Some(owner.clone()));
             // We grant minter role to caller in constructor, so he can mint/burn tokens
             AccessControl::grant_role(&mut instance, MINTER, Some(caller)).expect("Should grant MINTER role");
-            AccessControl::grant_role(&mut instance, MINTER, Some(minter)).expect("Should grant MINTER role");
+            AccessControl::grant_role(&mut instance, MINTER, Some(owner)).expect("Should grant MINTER role");
 
             instance
         }
+           
     }
 }
