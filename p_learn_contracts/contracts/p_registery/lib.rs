@@ -46,8 +46,17 @@ mod p_registry {
 
         }
 
-      
-
+          /// Dummy implementation for validating the proof and mining the new level nft 
+          /// TODO: implement zkp based solution 
+      #[ink(message)]
+      pub fn unlock_level(&mut self, proof: Hash, to:AccountId) {
+        assert!(self.proofs.get(&proof).unwrap_or_default(),"used proof is not accessible");
+        let player_level= self.player_last_level.get(&to).unwrap_or_default();
+        // self.levels.mint(to,player_level,1);
+        self.player_last_level.insert(to, &(player_level+1));
+        self.proofs.insert(proof, &true);
+      }
+    
       
     }
 
