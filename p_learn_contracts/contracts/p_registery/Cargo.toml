@@ -29,6 +29,10 @@ std = [
     "scale-info/std",
      # OpenBrush dependency
   "openbrush/std",
+  # If we don't enable the std feature for std builds we will not be able to generate our contract's metadata.
+
+      "p_learn_levels/std",
+
 ]
 ink-as-dependency = []
 e2e-tests = []
