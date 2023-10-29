@@ -245,6 +245,7 @@ Integrating Aleph Zero and ink! into PLEARN can offer unique character ownership
 
 Participating in the ASTAR bounty is an excellent opportunity to strengthen the character part of your game and leverage the blockchain's capabilities to provide secure and verifiable character ownership, transactions, and marketplace interactions. This aligns with PLEARN's concept of combining financial education with an immersive gaming experience.
 
+
 ## How to Integrate:
 
 Ink! Smart Contracts for NFT Characters: Develop ink! smart contracts that represent the in-game characters as NFTs. This establishes a blockchain-backed ownership system.
@@ -444,57 +445,6 @@ Install dependencies with npm
   cd app/client
 ```
    
-
-
-<!-- Run Locally -->
-### :running: Run Locally
-
-Clone the project
-
-```bash
-  git clone [(https://github.com/CryptoStein-PLEARN/LUMOS-HACKATHON/blob/main/README.md)]
-```
-
-Go to the project directory
-
-```bash
-  cd app/client
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run client
-```
-
-
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-To deploy this project run
-
-```bash
-  npx hardhat deploy
-```
-
-
-<!-- Contact -->
-## :handshake: Contact
-
-  - Email: adm.cryptostein@gmail.com
-  - Twitter: @CryptoStein2022
-
-
-  <!-- Useful Links -->
-## :link: Useful Links
- https://plearngame.netlify.app/
- 
    
    <!-- Demo -->
   - ## :cinema: Demo
