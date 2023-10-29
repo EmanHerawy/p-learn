@@ -4,6 +4,8 @@
 [submodule "learn-earn-game"]
 	path = learn-earn-game
 	url = git@github.com:EmanHerawy/learn-earn-game.git
+	    branch = plearn
+
 [submodule "polkaapi"]
 	path = polkaapi
 	url = git@github.com:0xBeshoy/polkaapi.git
