@@ -15,11 +15,11 @@ mod p_registry {
     #[derive( Storage)]
     pub struct Contract {
          #[storage_field]
-          levels:LevelsRef,
+      pub  levels:LevelsRef,
         /// Stores a `mapping` for last level per player on the storage.
-         player_last_level: Mapping<AccountId, u32>,
+       pub  player_last_level: Mapping<AccountId, u32>,
          #[storage_field]
-        access: access_control::Data,
+       pub access: access_control::Data,
     }
     
 
@@ -27,17 +27,12 @@ mod p_registry {
         /// Constructor that initializes the `bool` value to the given `init_value`.
         #[ink(constructor)]
       pub fn new(owner : AccountId,other_contract_code_hash: Hash) -> Self {
-        let nft = LevelsRef::new(owner)
-        .code_hash(other_contract_code_hash)
-        .endowment(0)
-        .salt_bytes([0xDE, 0xAD, 0xBE, 0xEF])
-        .instantiate();           
-            //  let mut instance = Self::default();
-
-            // let caller = instance.env().caller();
-            // access_control::Internal::_init_with_admin(&mut instance, Some(caller));
-            // instance.levels = nft;
-            //   instance
+        // instantiate the contract 
+            let nft = LevelsRef::new(owner)
+            .code_hash(other_contract_code_hash)
+            .endowment(0)
+            .salt_bytes([0xDE, 0xAD, 0xBE, 0xEF])
+            .instantiate();           
              let mut instance=Self {
                 levels: nft,
                 player_last_level: Mapping::new(),
