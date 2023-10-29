@@ -18,6 +18,7 @@ mod p_registry {
       pub  levels:LevelsRef,
         /// Stores a `mapping` for last level per player on the storage.
        pub  player_last_level: Mapping<AccountId, u32>,
+       pub  proofs: Mapping<Hash, bool>,
          #[storage_field]
        pub access: access_control::Data,
     }
@@ -35,6 +36,7 @@ mod p_registry {
             .instantiate();           
              let mut instance=Self {
                 levels: nft,
+                proofs: Mapping::new(),
                 player_last_level: Mapping::new(),
                 access: access_control::Data::default(),
             };
@@ -43,6 +45,8 @@ mod p_registry {
           instance
 
         }
+
+      
 
       
     }
