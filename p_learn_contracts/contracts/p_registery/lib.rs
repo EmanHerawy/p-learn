@@ -56,7 +56,20 @@ mod p_registry {
         self.player_last_level.insert(to, &(player_level+1));
         self.proofs.insert(proof, &true);
       }
-    
+      #[ink(message)]
+      pub fn get_player_level(&self, player:AccountId) -> u32{
+        self.player_last_level.get(&player).unwrap_or_default()
+      }
+
+      #[ink(message)]
+      pub fn get_proof(&self, proof:Hash) -> bool{
+        self.proofs.get(&proof).unwrap_or_default()
+      }
+
+      // #[ink(message)]
+      // pub fn get_nft_address (&self) -> AccountId{
+      //   self.levels.env().account_id()
+      // }
       
     }
 
