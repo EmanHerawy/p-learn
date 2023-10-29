@@ -1,3 +1,6 @@
 [submodule "PLEARN"]
 	path = PLEARN
 	url = https://github.com/CryptoStein-PLEARN/PLEARN
+[submodule "learn-earn-game"]
+	path = learn-earn-game
+	url = git@github.com:EmanHerawy/learn-earn-game.git
