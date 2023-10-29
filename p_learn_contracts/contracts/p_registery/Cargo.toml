@@ -1,5 +1,5 @@
 [package]
-name = "p_registery"
+name = "p_registry"
 version = "0.1.0"
 
 authors = ["Eman Herawy <[Eman.herawy@gmail.com]>"]
@@ -12,6 +12,7 @@ scale = { package = "parity-scale-codec", version = "3", default-features = fals
 scale-info = { version = "2.6", default-features = false, features = ["derive"], optional = true }
 # Import ink!
 openbrush = { git = "https://github.com/Brushfam/openbrush-contracts", branch = "develop", default-features = false, features = [ "access_control"] }
+p_learn_levels = { path = "../p_learn_levels", default-features = false, features = ["ink-as-dependency"] }
 
 
 [dev-dependencies]
