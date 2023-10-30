@@ -342,12 +342,17 @@ To run PLEARN, you will need to add the following environment variables to your 
 
 <!-- Prerequisites -->
 ### :bangbang: Prerequisites
+- >For smart contract 
+  >
+  > - Install Rust via the [Substrate Docs](https://docs.substrate.io/install/) (skip the "Compile a Substrate node" section)
+  > - Install [`cargo contract`](https://github.com/paritytech/cargo-contract)
+  > - Install [`substrate-contracts-node`](https://github.com/paritytech/substrate-contracts-node)
 
-This project uses Node as package manager
-
-```bash
- npm install
-```
+- >For front end uses Node as package manager
+    >
+    ```bash
+    npm install
+    ```
 
 <!-- Installation -->
 ### :gear: Installation
@@ -363,6 +368,7 @@ Install dependencies with npm
    <!-- Demo -->
   - ## :cinema: Demo
   https://www.loom.com/share/244e002e8c5641f88377982e65d079ee?sid=d2cc4f25-5524-4174-9971-def84109f100
+  <video width="320" height="240" controls src="inkdemo.mp4">
   
 
  
